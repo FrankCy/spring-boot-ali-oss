@@ -1,4 +1,4 @@
-package com.test.ali.oss;
+package com.test.ali.util;
 
 import com.aliyun.oss.OSSClient;
 import com.aliyun.oss.model.OSSObject;
@@ -9,8 +9,8 @@ import java.io.*;
  * @version 1.0
  * @description：
  * @author: Yang.Chang
- * @project: spring-boot-ali-oss
- * @package: com.test.ali.oss
+ * @project: spring-boot-ali-util
+ * @package: com.test.ali.util
  * @email: cy880708@163.com
  * @date: 2018/9/18 下午3:05
  * @mofified By:
@@ -37,7 +37,7 @@ public class OssUtil {
      */
     public static void createOssBucket() {
         // Endpoint以北京为例，其它Region请按实际情况填写。
-        String endpoint = "http://oss-cn-beijing.aliyuncs.com";
+        String endpoint = "http://util-cn-beijing.aliyuncs.com";
         // 阿里云主账号AccessKey拥有所有API的访问权限，风险很高。强烈建议您创建并使用RAM账号进行API访问或日常运维，请登录 https://ram.console.aliyun.com 创建RAM账号。
         String accessKeyId = keyId;
         String accessKeySecret = keySecret;
@@ -60,7 +60,7 @@ public class OssUtil {
      */
     public static void uploadStringFile(){
         // Endpoint以北京为例，其它Region请按实际情况填写。
-        String endpoint = "http://oss-cn-beijing.aliyuncs.com";
+        String endpoint = "http://util-cn-beijing.aliyuncs.com";
         // 阿里云主账号AccessKey拥有所有API的访问权限，风险很高。强烈建议您创建并使用RAM账号进行API访问或日常运维，请登录 https://ram.console.aliyun.com 创建RAM账号。
         String accessKeyId = keyId;
         String accessKeySecret = keySecret;
@@ -85,7 +85,7 @@ public class OssUtil {
      */
     public static void downloadFileContent(String fileKey) {
         // Endpoint以北京为例，其它Region请按实际情况填写。
-        String endpoint = "http://oss-cn-beijing.aliyuncs.com";
+        String endpoint = "http://util-cn-beijing.aliyuncs.com";
         // 阿里云主账号AccessKey拥有所有API的访问权限，风险很高。强烈建议您创建并使用RAM账号进行API访问或日常运维，请登录 https://ram.console.aliyun.com 创建RAM账号。
         String accessKeyId = keyId;
         String accessKeySecret = keySecret;
@@ -129,7 +129,7 @@ public class OssUtil {
      */
     public static void uploadByteFile(){
         // Endpoint以北京为例，其它Region请按实际情况填写。
-        String endpoint = "http://oss-cn-beijing.aliyuncs.com";
+        String endpoint = "http://util-cn-beijing.aliyuncs.com";
         // 阿里云主账号AccessKey拥有所有API的访问权限，风险很高。强烈建议您创建并使用RAM账号进行API访问或日常运维，请登录 https://ram.console.aliyun.com 创建RAM账号。
         String accessKeyId = keyId;
         String accessKeySecret = keySecret;
@@ -152,7 +152,7 @@ public class OssUtil {
      */
     public static void uploadFileStream(){
         // Endpoint以北京为例，其它Region请按实际情况填写。
-        String endpoint = "http://oss-cn-beijing.aliyuncs.com";
+        String endpoint = "http://util-cn-beijing.aliyuncs.com";
         // 云账号AccessKey有所有API访问权限，建议遵循阿里云安全最佳实践，创建并使用RAM子账号进行API访问或日常运维，请登录 https://ram.console.aliyun.com 创建。
         String accessKeyId = keyId;
         String accessKeySecret = keySecret;
@@ -180,7 +180,7 @@ public class OssUtil {
      */
     public static void uploadFile(){
         // Endpoint以北京为例，其它Region请按实际情况填写。
-        String endpoint = "http://oss-cn-beijing.aliyuncs.com";
+        String endpoint = "http://util-cn-beijing.aliyuncs.com";
         // 阿里云主账号AccessKey拥有所有API的访问权限，风险很高。强烈建议您创建并使用RAM账号进行API访问或日常运维，请登录 https://ram.console.aliyun.com 创建RAM账号。
         String accessKeyId = keyId;
         String accessKeySecret = keySecret;

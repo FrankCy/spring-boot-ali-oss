@@ -1,6 +1,6 @@
-package com.test.ali;
+package com.test.ali.controller;
 
-import com.test.ali.oss.OssUtil;
+import com.test.ali.util.OssUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @version 1.0
  * @description：
  * @author: Yang.Chang
- * @project: spring-boot-ali-oss
+ * @project: spring-boot-ali-util
  * @package: com.test.ali
  * @email: cy880708@163.com
  * @date: 2018/9/18 下午3:47

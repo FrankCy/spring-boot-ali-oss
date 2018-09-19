@@ -1,4 +1,4 @@
-package com.test.ali.oss;
+package com.test.ali.util;
 
 import com.aliyun.oss.common.utils.BinaryUtil;
 import com.aliyun.oss.internal.OSSUtils;
@@ -17,8 +17,8 @@ import java.util.Map;
  * @version 1.0
  * @description：
  * @author: Yang.Chang
- * @project: spring-boot-ali-oss
- * @package: com.test.ali.oss
+ * @project: spring-boot-ali-util
+ * @package: com.test.ali.util
  * @email: cy880708@163.com
  * @date: 2018/9/18 下午5:06
  * @mofified By:
@@ -28,7 +28,7 @@ public class OssFormUploadUtil {
     // 上传文件
     private String localFilePath = "<yourLocalFile>";
     // Endpoint以杭州为例，其它Region请按实际情况填写。
-    private String endpoint = "http://oss-cn-hangzhou.aliyuncs.com";
+    private String endpoint = "http://util-cn-hangzhou.aliyuncs.com";
     // 阿里云主账号AccessKey拥有所有API的访问权限，风险很高。强烈建议您创建并使用RAM账号进行API访问或日常运维，请登录 https://ram.console.aliyun.com 创建RAM账号。
     private String accessKeyId = "<yourAccessKeyId>";
     private String accessKeySecret = "<yourAccessKeySecret>";
@@ -52,7 +52,7 @@ public class OssFormUploadUtil {
                 + localFilePath);
         // 设置回调参数。
         Callback callback = new Callback();
-        // 设置回调服务器地址，如http://oss-demo.aliyuncs.com:23450或http://127.0.0.1:9090。
+        // 设置回调服务器地址，如http://util-demo.aliyuncs.com:23450或http://127.0.0.1:9090。
         callback.setCallbackUrl("<yourCallbackServerUrl>");
         // 设置回调请求消息头中Host的值，如oss-cn-hangzhou.aliyuncs.com。
         callback.setCallbackHost("<yourCallbackServerHost>");
