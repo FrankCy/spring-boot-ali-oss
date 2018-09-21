@@ -1,4 +1,4 @@
-package com.test.ali.controller;
+package com.test.ali.controller.oss;
 
 import com.test.ali.util.OssUtil;
 import org.springframework.stereotype.Controller;
