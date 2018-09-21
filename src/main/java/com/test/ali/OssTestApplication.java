@@ -19,5 +19,4 @@ public class OssTestApplication {
     public static void main(String[] args) {
         SpringApplication.run(OssTestApplication.class, args);
     }
-
 }
