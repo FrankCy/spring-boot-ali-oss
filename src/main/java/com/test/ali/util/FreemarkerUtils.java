@@ -1,13 +1,18 @@
 package com.test.ali.util;
 
+import com.itextpdf.text.Document;
+import com.itextpdf.text.PageSize;
+import com.itextpdf.text.pdf.PdfWriter;
+import com.itextpdf.text.pdf.codec.Base64;
+import com.itextpdf.tool.xml.XMLWorkerHelper;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
 import freemarker.template.TemplateExceptionHandler;
 
-import javax.naming.TimeLimitExceededException;
 import java.io.File;
 import java.io.IOException;
+import java.io.StringReader;
 import java.io.StringWriter;
 import java.util.Map;
 
@@ -52,5 +57,17 @@ public class FreemarkerUtils {
         }
     }
 
+    public static void savePdf(Base64.OutputStream out, String html) {
+        Document document = new Document(PageSize.A4, 50, 50, 60, 60);
+        try {
+            PdfWriter writer = PdfWriter.getInstance(document, out);
+            document.open();
+            XMLWorkerHelper.getInstance().parseXHtml(writer, document, new StringReader(html));
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            document.close();
+        }
+    }
 
 }
