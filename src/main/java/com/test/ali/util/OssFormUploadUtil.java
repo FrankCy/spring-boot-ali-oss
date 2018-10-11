@@ -36,6 +36,7 @@ public class OssFormUploadUtil {
     private String bucketName = "<yourBucketName>";
     // 文件名称
     private String objectName = "<yourObjectName>";
+
     /**
      * 表单上传
      * @throws Exception
